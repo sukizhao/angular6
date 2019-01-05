@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { StorageService } from './myService/storage.service';//引入服务
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 
@@ -27,7 +27,7 @@ import { ShopcateComponent } from './components/shopcate/shopcate.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
