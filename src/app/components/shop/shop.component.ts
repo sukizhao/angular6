@@ -13,6 +13,7 @@ export class ShopComponent implements OnInit {
     private service: StorageService
   ) {
     service.suki.name = '炒肥肠';
+    // 这里有个大坑：就是必须点击商品执行shop.ts才能service.suki.name 才是炒肥肠，如果只是首页会从service获取值，也就是能传值，但是改变不了最初始服务器定义的值
   }
 
   ngOnInit() {
