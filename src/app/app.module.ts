@@ -12,7 +12,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ShoplistComponent } from './components/shoplist/shoplist.component';
 import { ShopcateComponent } from './components/shopcate/shopcate.component';
-
+import { Ellipsis } from './myPipe/ellipsisPipe';//导入自定义管道
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { ShopcateComponent } from './components/shopcate/shopcate.component';
     ShopComponent,
     WelcomeComponent,
     ShoplistComponent,
-    ShopcateComponent
+    ShopcateComponent,
+    Ellipsis,
   ],
   imports: [
     BrowserModule,
